@@ -1,0 +1,120 @@
+{
+  "name": "cx-keepa",
+  "version": "0.1.5",
+  "description": "Amazon price and BSR history.",
+  "license": "MIT",
+  "author": "ComChatX",
+  "homepage": "https://github.com/comchatx/cx-keepa#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comchatx/cx-keepa.git"
+  },
+  "bugs": "https://github.com/comchatx/cx-keepa/issues",
+  "keywords": [
+    "pi-package"
+  ],
+  "type": "module",
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  },
+  "files": [
+    "skills"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "comchatx": {
+    "name": "Keepa",
+    "about": "亚马逊商品的历史价格和 BSR 走势。",
+    "description": "Keepa 提供 11 个亚马逊站点的历史价格、BSR、Buy Box、报价、优惠券和月销量预测。",
+    "mark": {
+      "logo": "keepa"
+    },
+    "section": "data",
+    "order": 10,
+    "why": {
+      "en": "Investigate the history of price changes, Buy Box ownership and seasonal rank movement, and assess product opportunities. Available for Amazon US, UK, DE, FR, JP, CA, IT, ES, IN, MX and BR.",
+      "zh": "查看价格变化、Buy Box 归属和季节性排名的历史记录，并评估选品机会。数据涵盖亚马逊美国、英国、德国、法国、日本、加拿大、意大利、西班牙、印度、墨西哥和巴西站。"
+    },
+    "tryIt": [
+      {
+        "en": "My power bank {asin} went from rank 800 to 2,300 in Electronics over the last two weeks. Pull its price, Buy Box and stock history for that stretch and show me the day things turned.",
+        "zh": "我的充电宝 {asin} 在电子类目的排名两周内从 800 掉到 2300。查看这段时间的价格、Buy Box 和库存记录，找出从哪一天开始变化。"
+      },
+      {
+        "en": "Find the ten best-selling 20,000 mAh power banks on Amazon US, with each one's price, rating, review count and monthly sales, in one table.",
+        "zh": "找出亚马逊美国站销量最高的十款 20000 mAh 充电宝，把每款的价格、评分、评论数和月销量放进一张表格。"
+      },
+      {
+        "en": "Is {asin} on Amazon JP selling more or less than it did at this time last year?",
+        "zh": "亚马逊日本站的 {asin} 现在销量比去年同期高还是低？"
+      }
+    ],
+    "builds": [
+      "cx-sources"
+    ],
+    "skills": {
+      "keepa": {
+        "about": {
+          "en": "Looks up products on Keepa by ASIN or name across eleven Amazon marketplaces.",
+          "zh": "按 ASIN 或名称查询 11 个亚马逊站点的 Keepa 数据。"
+        },
+        "when": [
+          {
+            "en": "Checking what a product sells for now, or how its price moved",
+            "zh": "查看商品当前价格和历史变化"
+          },
+          {
+            "en": "Finding out who holds the Buy Box, and since when",
+            "zh": "查看 Buy Box 归属及变更时间"
+          },
+          {
+            "en": "Seeing which products sell best for a search or in a category",
+            "zh": "查看搜索结果或类目中的畅销商品"
+          }
+        ],
+        "tryIt": [
+          {
+            "en": "My power bank {asin} went from rank 800 to 2,300 in Electronics over the last two weeks. Pull its price, Buy Box and stock history for that stretch and show me the day things turned.",
+            "zh": "我的充电宝 {asin} 在电子类目的排名两周内从 800 掉到 2300。查看这段时间的价格、Buy Box 和库存记录，找出从哪一天开始变化。"
+          },
+          {
+            "en": "Find the ten best-selling 20,000 mAh power banks on Amazon US, with each one's price, rating, review count and monthly sales, in one table.",
+            "zh": "找出亚马逊美国站销量最高的十款 20000 mAh 充电宝，把每款的价格、评分、评论数和月销量放进一张表格。"
+          }
+        ]
+      }
+    },
+    "source": {
+      "name": "keepa",
+      "ownKey": {
+        "en": "Usage is billed to your balance. You can also use your own Keepa API key.",
+        "zh": "按用量从余额扣款，也可以使用你自己的 Keepa API 密钥。"
+      },
+      "aspects": {
+        "amazon/us/<asin>/product": {
+          "en": "A product on Amazon US",
+          "zh": "亚马逊美国站的单个商品"
+        },
+        "amazon/jp/<asin>/product": {
+          "en": "A product on Amazon JP",
+          "zh": "亚马逊日本站的单个商品"
+        },
+        "raw": {
+          "en": "A product on any other marketplace, or any other lookup (a search, a seller, a best sellers list)",
+          "zh": "其他亚马逊站点的商品，或其他查询（搜索、卖家、畅销榜等）"
+        }
+      }
+    },
+    "mcp": "keepa"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.4.0",
+    "@types/node": "26.2.0",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  }
+}
