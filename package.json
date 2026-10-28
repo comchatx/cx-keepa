@@ -1,6 +1,6 @@
 {
   "name": "cx-keepa",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Amazon price and BSR history.",
   "license": "MIT",
   "author": "ComChatX",
@@ -17,10 +17,15 @@
   "pi": {
     "skills": [
       "./skills"
+    ],
+    "prompts": [
+      "./prompts"
     ]
   },
   "files": [
-    "skills"
+    "skills",
+    "prompts",
+    "README.zh-CN.md"
   ],
   "scripts": {
     "typecheck": "tsc --noEmit",
@@ -28,8 +33,9 @@
   },
   "comchatx": {
     "name": "Keepa",
-    "about": "亚马逊商品的历史价格和 BSR 走势。",
-    "description": "Keepa 提供 11 个亚马逊站点的历史价格、BSR、Buy Box、报价、优惠券和月销量预测。",
+    "description": {
+      "zh": "亚马逊商品的历史价格和 BSR 走势。"
+    },
     "mark": {
       "logo": "keepa"
     },
@@ -39,53 +45,20 @@
       "en": "Investigate the history of price changes, Buy Box ownership and seasonal rank movement, and assess product opportunities. Available for Amazon US, UK, DE, FR, JP, CA, IT, ES, IN, MX and BR.",
       "zh": "查看价格变化、Buy Box 归属和季节性排名的历史记录，并评估选品机会。数据涵盖亚马逊美国、英国、德国、法国、日本、加拿大、意大利、西班牙、印度、墨西哥和巴西站。"
     },
-    "tryIt": [
-      {
-        "en": "My power bank {asin} went from rank 800 to 2,300 in Electronics over the last two weeks. Pull its price, Buy Box and stock history for that stretch and show me the day things turned.",
-        "zh": "我的充电宝 {asin} 在电子类目的排名两周内从 800 掉到 2300。查看这段时间的价格、Buy Box 和库存记录，找出从哪一天开始变化。"
-      },
-      {
-        "en": "Find the ten best-selling 20,000 mAh power banks on Amazon US, with each one's price, rating, review count and monthly sales, in one table.",
-        "zh": "找出亚马逊美国站销量最高的十款 20000 mAh 充电宝，把每款的价格、评分、评论数和月销量放进一张表格。"
-      },
-      {
-        "en": "Is {asin} on Amazon JP selling more or less than it did at this time last year?",
-        "zh": "亚马逊日本站的 {asin} 现在销量比去年同期高还是低？"
-      }
-    ],
-    "builds": [
-      "cx-sources"
-    ],
     "skills": {
       "keepa": {
-        "about": {
-          "en": "Looks up products on Keepa by ASIN or name across eleven Amazon marketplaces.",
-          "zh": "按 ASIN 或名称查询 11 个亚马逊站点的 Keepa 数据。"
-        },
-        "when": [
-          {
-            "en": "Checking what a product sells for now, or how its price moved",
-            "zh": "查看商品当前价格和历史变化"
-          },
-          {
-            "en": "Finding out who holds the Buy Box, and since when",
-            "zh": "查看 Buy Box 归属及变更时间"
-          },
-          {
-            "en": "Seeing which products sell best for a search or in a category",
-            "zh": "查看搜索结果或类目中的畅销商品"
-          }
-        ],
-        "tryIt": [
-          {
-            "en": "My power bank {asin} went from rank 800 to 2,300 in Electronics over the last two weeks. Pull its price, Buy Box and stock history for that stretch and show me the day things turned.",
-            "zh": "我的充电宝 {asin} 在电子类目的排名两周内从 800 掉到 2300。查看这段时间的价格、Buy Box 和库存记录，找出从哪一天开始变化。"
-          },
-          {
-            "en": "Find the ten best-selling 20,000 mAh power banks on Amazon US, with each one's price, rating, review count and monthly sales, in one table.",
-            "zh": "找出亚马逊美国站销量最高的十款 20000 mAh 充电宝，把每款的价格、评分、评论数和月销量放进一张表格。"
-          }
-        ]
+        "zh": "按 ASIN 或名称查询 11 个亚马逊站点的商品价格、排名、Buy Box 和销量历史，也能查卖家信息。"
+      }
+    },
+    "prompts": {
+      "rank-drop": {
+        "zh": "从价格、Buy Box 和库存记录中找出商品排名开始变化的那一天"
+      },
+      "top-ten": {
+        "zh": "把亚马逊美国站某个搜索词下的十款畅销商品放进一张表格对比"
+      },
+      "year-on-year": {
+        "zh": "查看商品现在的销量比去年同期高还是低"
       }
     },
     "source": {
@@ -110,6 +83,9 @@
       }
     },
     "mcp": "keepa"
+  },
+  "dependencies": {
+    "cx-sources": "^0.1.3"
   },
   "devDependencies": {
     "@earendil-works/pi-coding-agent": "1.4.0",
