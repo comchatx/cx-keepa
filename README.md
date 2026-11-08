@@ -8,7 +8,7 @@ An Amazon page shows you only today. Keepa shows what happened before it, so cx 
 - Which products sell best for a search, and at what price, rating and monthly sales?
 - Is this product selling more or less than at this time last year?
 
-cx finds a product by its ASIN or by its name. Given a name, it searches, checks the title and model of what it finds, and asks you to choose where more than one product matches.
+cx finds a product by its ASIN or by its name. Given a name, it searches, and checks the title and model of what it finds.
 
 ## What it costs
 

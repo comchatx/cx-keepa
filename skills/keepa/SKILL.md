@@ -7,7 +7,7 @@ Keepa supplies Amazon product facts through `cx`; read cx-sources first. Keepa's
 
 ## Find and fetch
 
-Use the marketplace the seller named; if none was named, ask. Buy only an ASIN the seller gave or a search or fetched file shows, competitors and similar products too; search or ask about a recalled one. A product name is a search term: search it, verify the returned product's title and model, and let the seller choose between ambiguous matches.
+Use the marketplace the seller named: each marketplace is its own `domain` and its own purchase (below), and one the seller did not name is not known. Buy only an ASIN the seller gave or a search or fetched file shows, competitors and similar products too; a recalled one is searched before it is bought. A product name is a search term: search it and verify the returned product's title and model, since one name can match more than one product.
 
 ```sh
 cx raw keepa --method GET --path /search --query domain=1 --query type=product --query 'term=PRODUCT NAME' --query asins-only=1

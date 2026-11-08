@@ -1,6 +1,6 @@
 {
   "name": "cx-keepa",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Amazon price and BSR history.",
   "license": "MIT",
   "author": "ComChatX",
@@ -65,7 +65,7 @@
       "name": "keepa",
       "ownKey": {
         "en": "Usage is billed to your balance. You can also use your own Keepa API key.",
-        "zh": "按用量从余额扣款，也可以使用你自己的 Keepa API 密钥。"
+        "zh": "按用量从余额扣费，也可以使用你自己的 Keepa API 密钥。"
       },
       "aspects": {
         "amazon/us/<asin>/product": {
