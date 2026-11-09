@@ -1,18 +1,20 @@
-# Keepa
+cx tells you when your products and rivals' changed price, coupon, Buy&nbsp;Box or BSR, and with cx-schedule reviews them on your schedule. It also finds products by search, best-seller list or seller. It all comes from Keepa.
 
-Keepa has followed Amazon products for years. With this plugin, cx can read that history for you: a product's price, sales rank (BSR), Buy Box owner, offers, coupons and estimated monthly sales, day by day, on Amazon US, UK, DE, FR, JP, CA, IT, ES, IN, MX and BR.
+Some things you can ask:
 
-An Amazon page shows you only today. Keepa shows what happened before it, so cx can answer questions like these:
+- Which of my B0EXAMPLE1 and these three rivals changed price or ran a coupon last week?
+- What else does the seller who took B0EXAMPLE1's Buy&nbsp;Box sell?
+- In this category, which products sell over 1,000 a month with under 100 reviews?
 
-- When did my rank start to fall, and what changed that day: the price, the Buy Box, the stock?
-- Which products sell best for a search, and at what price, rating and monthly sales?
-- Is this product selling more or less than at this time last year?
+cx finds a product by its ASIN or by its name.
 
-cx finds a product by its ASIN or by its name. Given a name, it searches, and checks the title and model of what it finds.
+## Marketplaces
+
+Amazon US, UK, DE, FR, JP, CA, IT, ES, IN, MX and BR.
 
 ## What it costs
 
-Each product cx reads is billed to your ComChatX balance. The plugin's page shows the price of one product, and Usage shows every purchase and its cost.
+Each product cx reads, and each lookup, is billed to your ComChatX balance. The plugin's page shows the price of one product, and Usage shows every purchase and its cost.
 
 ## What it needs
 
