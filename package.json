@@ -1,7 +1,7 @@
 {
   "name": "cx-keepa",
-  "version": "0.1.7",
-  "description": "Amazon price and BSR history.",
+  "version": "0.1.8",
+  "description": "Tracks and reviews price, BSR and Buy Box, yours and rivals'.",
   "license": "MIT",
   "author": "ComChatX",
   "homepage": "https://github.com/comchatx/cx-keepa#readme",
@@ -33,9 +33,7 @@
   },
   "comchatx": {
     "name": "Keepa",
-    "description": {
-      "zh": "亚马逊商品的历史价格和 BSR 走势。"
-    },
+    "about": "跟踪竞品和你的商品的价格、BSR 和 Buy Box，替你复盘。",
     "mark": {
       "logo": "keepa"
     },
