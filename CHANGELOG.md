@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.9
+
+- The Chinese README's heading 「依赖」 reads 「需要」, beside the English "What it needs": 「依赖」 is a developer's word, and no line on the Plugins page uses it.
+
 ## 0.1.8
 
 - The card line says what cx does with Keepa: "Tracks and reviews price, BSR and Buy Box, yours and rivals'." in English, as npm's `description`, and 「跟踪竞品和你的商品的价格、BSR 和 Buy Box，替你复盘。」 in Chinese, as `comchatx.about`, which takes the place of `comchatx.description.zh`. They said "Amazon price and BSR history." and 「亚马逊商品的历史价格和 BSR 走势。」.
