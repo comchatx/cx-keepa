@@ -18,4 +18,4 @@ Each product cx reads, and each lookup, is billed to your ComChatX balance. The 
 
 ## What it needs
 
-Keepa installs with cx-sources, which buys and reads data for cx.
+Keepa API installs with cx-sources, which buys and reads data for cx.

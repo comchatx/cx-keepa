@@ -18,4 +18,4 @@ cx 每读取一个商品或做一次查询，都会从你的 ComChatX 余额扣�
 
 ## 需要
 
-Keepa 会和 cx-sources 一起安装，cx-sources 负责替 cx 购买和读取数据。
+Keepa 数据接口会和 cx-sources 一起安装，cx-sources 负责替 cx 购买和读取数据。
