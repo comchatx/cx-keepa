@@ -1,6 +1,6 @@
 {
   "name": "cx-keepa",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Tracks and reviews price, BSR and Buy Box, yours and rivals'.",
   "license": "MIT",
   "author": "ComChatX",
@@ -32,7 +32,8 @@
     "test": "vitest run"
   },
   "comchatx": {
-    "name": "Keepa",
+    "name": "Keepa API",
+    "nameZh": "Keepa 数据接口",
     "about": "跟踪竞品和你的商品的价格、BSR 和 Buy Box，替你复盘。",
     "mark": {
       "logo": "keepa"

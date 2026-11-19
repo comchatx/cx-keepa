@@ -1,4 +1,4 @@
-竞品和你的商品哪天调价、上了优惠券、Buy&nbsp;Box 易主、BSR 起落，cx 都能查到。配上 cx-schedule，还能按你定的时间替你复盘。cx 也能按搜索词、畅销榜或卖家找出商品，放在一起对比。数据来自 Keepa，覆盖亚马逊 11 个站点。
+竞品和你的商品哪天调价、上了优惠券、Buy&nbsp;Box 易主、BSR 起落，cx 都能查到。配上[定时任务](https://www.npmjs.com/package/@comchatx/cx-schedule)，还能按你定的时间替你复盘。cx 也能按搜索词、畅销榜或卖家找出商品，放在一起对比。数据来自 Keepa，覆盖亚马逊 11 个站点。
 
 你可以这样问：
 
@@ -18,4 +18,4 @@ cx 每读取一个商品或做一次查询，都会从你的 ComChatX 余额扣�
 
 ## 需要
 
-Keepa 会和 cx-sources 一起安装，cx-sources 负责替 cx 购买和读取数据。
+它会和[数据源基础功能](https://www.npmjs.com/package/cx-sources)一起安装，由数据源基础功能替 cx 购买和读取数据。
