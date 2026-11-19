@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.11
+
+- The README's first paragraph, in Chinese, is the one signed on 2026-11-18 (「竞品和你的商品哪天调价、……cx 都能查到：Keepa 记着每个商品逐日的历史。……覆盖亚马逊 11 个站点。」), and in English the copy seat's paragraph of the same meaning ("… from the day-by-day history Keepa keeps for each product. … It all comes from Keepa, on 11 Amazon marketplaces."). It no longer names Scheduled Tasks.
+- The README's "What it needs" section leaves, in both languages, heading and all, as signed on 2026-11-18. The Plugins page draws what installs with it.
+- `comchatx.builds` names two optional plugins, each with the reason signed on 2026-11-18: `@comchatx/cx-schedule`, "Reviews your products and rivals' on a schedule." / 「用于按你定的时间，替你复盘竞品和你的商品。」, and `cx-amazon-seller`, "Tells cx from the start that you sell on Amazon." / 「用于让 cx 从第一条消息起就知道你在亚马逊开店。」
+- The skill's line is the one signed on 2026-11-17, in `comchatx.skills.keepa` as `zh` 「查商品的价格、排名、Buy Box 和销量历史，也能查卖家。」 and `en` "Looks up a product's price, rank, Buy Box and sales history, and sellers.". `SKILL.md`'s `description` is unchanged.
+- The three templates read the lines signed on 2026-11-17, in English (`description`) and Chinese (`comchatx.prompts.<name>.zh`): `rank-drop` "Find the day [ASIN]'s rank turned on Amazon US, from its price, Buy Box and stock history" / 「从价格、Buy Box 和库存记录中，找出【ASIN】在美国站排名开始变化的那一天」; `top-ten` "Compare the ten best sellers for [search term] on Amazon US in one table" / 「把亚马逊美国站【搜索词】的十款畅销商品放进一张表格对比」; `year-on-year` "See whether [ASIN] sells more or less on Amazon US than at this time last year" / 「查看【ASIN】在美国站的销量比去年同期高还是低」.
+
 ## 0.1.10
 
 - The card's name is the one signed on 2026-11-17: "Keepa API" on the English page (`comchatx.name`) and 「Keepa 数据接口」 on the Chinese page (`comchatx.nameZh`).

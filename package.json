@@ -1,6 +1,6 @@
 {
   "name": "cx-keepa",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Tracks and reviews price, BSR and Buy Box, yours and rivals'.",
   "license": "MIT",
   "author": "ComChatX",
@@ -46,20 +46,39 @@
     },
     "skills": {
       "keepa": {
-        "zh": "按 ASIN 或名称查询 11 个亚马逊站点的商品价格、排名、Buy Box 和销量历史，也能查卖家信息。"
+        "zh": "查商品的价格、排名、Buy Box 和销量历史，也能查卖家。",
+        "en": "Looks up a product's price, rank, Buy Box and sales history, and sellers."
       }
     },
     "prompts": {
       "rank-drop": {
-        "zh": "从价格、Buy Box 和库存记录中找出商品排名开始变化的那一天"
+        "zh": "从价格、Buy Box 和库存记录中，找出【ASIN】在美国站排名开始变化的那一天"
       },
       "top-ten": {
-        "zh": "把亚马逊美国站某个搜索词下的十款畅销商品放进一张表格对比"
+        "zh": "把亚马逊美国站【搜索词】的十款畅销商品放进一张表格对比"
       },
       "year-on-year": {
-        "zh": "查看商品现在的销量比去年同期高还是低"
+        "zh": "查看【ASIN】在美国站的销量比去年同期高还是低"
       }
     },
+    "builds": [
+      {
+        "on": "@comchatx/cx-schedule",
+        "need": "optional",
+        "why": {
+          "en": "Reviews your products and rivals' on a schedule.",
+          "zh": "用于按你定的时间，替你复盘竞品和你的商品。"
+        }
+      },
+      {
+        "on": "cx-amazon-seller",
+        "need": "optional",
+        "why": {
+          "en": "Tells cx from the start that you sell on Amazon.",
+          "zh": "用于让 cx 从第一条消息起就知道你在亚马逊开店。"
+        }
+      }
+    ],
     "source": {
       "name": "keepa",
       "ownKey": {

@@ -1,4 +1,4 @@
-cx tells you when your products and rivals' changed price, coupon, Buy&nbsp;Box or BSR, and with [Scheduled Tasks](https://www.npmjs.com/package/@comchatx/cx-schedule) reviews them on your schedule. It also finds products by search, best-seller list or seller. It all comes from Keepa.
+cx tells you when your products and rivals' changed price, coupon, Buy&nbsp;Box or BSR, from the day-by-day history Keepa keeps for each product. It also finds products by search, best-seller list or seller. It all comes from Keepa, on 11 Amazon marketplaces.
 
 Some things you can ask:
 
@@ -15,7 +15,3 @@ Amazon US, UK, DE, FR, JP, CA, IT, ES, IN, MX and BR.
 ## What it costs
 
 Each product cx reads, and each lookup, is billed to your ComChatX balance. The plugin's page shows the price of one product, and Usage shows every purchase and its cost.
-
-## What it needs
-
-It installs with [Data Source Core](https://www.npmjs.com/package/cx-sources), which buys and reads data for cx.
