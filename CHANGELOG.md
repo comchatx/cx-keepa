@@ -2,7 +2,7 @@
 
 ## 0.1.11
 
-- The README's first paragraph, in Chinese, is the one signed on 2026-11-18 (「竞品和你的商品哪天调价、……cx 都能查到：Keepa 记着每个商品逐日的历史。……覆盖亚马逊 11 个站点。」), and in English the copy seat's paragraph of the same meaning ("… from the day-by-day history Keepa keeps for each product. … It all comes from Keepa, on 11 Amazon marketplaces."). It no longer names Scheduled Tasks.
+- The README's first paragraph, in Chinese, is the one signed on 2026-11-18 (「竞品和你的商品哪天调价、……cx 都能查到：Keepa 记着每个商品逐日的历史。……覆盖亚马逊 11 个站点。」), and in English the paragraph of the same meaning ("… from the day-by-day history Keepa keeps for each product. … It all comes from Keepa, on 11 Amazon marketplaces."). It no longer names Scheduled Tasks.
 - The README's "What it needs" section leaves, in both languages, heading and all, as signed on 2026-11-18. The Plugins page draws what installs with it.
 - `comchatx.builds` names two optional plugins, each with the reason signed on 2026-11-18: `@comchatx/cx-schedule`, "Reviews your products and rivals' on a schedule." / 「用于按你定的时间，替你复盘竞品和你的商品。」, and `cx-amazon-seller`, "Tells cx from the start that you sell on Amazon." / 「用于让 cx 从第一条消息起就知道你在亚马逊开店。」
 - The skill's line is the one signed on 2026-11-17, in `comchatx.skills.keepa` as `zh` 「查商品的价格、排名、Buy Box 和销量历史，也能查卖家。」 and `en` "Looks up a product's price, rank, Buy Box and sales history, and sellers.". `SKILL.md`'s `description` is unchanged.
