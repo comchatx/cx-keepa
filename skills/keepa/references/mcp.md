@@ -8,11 +8,11 @@ Call a tool from a codemode script, as `await tools.mcp__keepa__<name>({ ... })`
 
 ## Money
 
-A call reserves the most its arguments can cost and settles at what the reply states in `apiTokens.consumedByThisCall`. `product_finder_fields` and `get_price_graph` reply without that figure and settle 0 and 1 tokens. A reservation is not a charge.
+On the platform's key, a call reserves the most its arguments can cost and settles at what the reply states in `apiTokens.consumedByThisCall`. On a key the seller saved for Keepa, nothing is reserved or settled on the balance: Keepa counts the tokens on the seller's own account. `product_finder_fields` and `get_price_graph` reply without that figure and settle 0 and 1 tokens. A reservation is not a charge.
 
 A refusal starting `MCP HTTP request failed with status 402` is the wallet's floor, not Keepa's: the balance is under the call's reservation.
 
-Closed on the platform's key, and refused before any spend: `tracking_add`, `tracking_remove`, `tracking_list`, `tracking_get_notifications`, `tracking_set_webhook`. `get_products` by `codes` is refused the same way; look a product up by ASIN.
+Closed on the platform's key, and refused before any spend: `tracking_add`, `tracking_remove`, `tracking_list`, `tracking_get_notifications`, `tracking_set_webhook`. On a key the seller saved for Keepa they are open. `get_products` by `codes` is refused the same way; look a product up by ASIN.
 
 ## The two ways to a product
 
