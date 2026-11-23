@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.14
+
+- The tile's mark on the Plugins page is the signed drawing.
+
 ## 0.1.13
 
 - The own-key line says "API Key", as the Plugins page does: "Usage is billed to your balance. You can also use your own Keepa API Key." / 「按用量从余额扣费，也可以使用你自己的 Keepa API Key。」
