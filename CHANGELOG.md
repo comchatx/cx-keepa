@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.13
+
+- The own-key line says "API Key", as the Plugins page does: "Usage is billed to your balance. You can also use your own Keepa API Key." / 「按用量从余额扣费，也可以使用你自己的 Keepa API Key。」
+- The MCP reference says that the five `tracking_*` tools, closed on the platform's key, are open on a key the seller saved for Keepa, and that a call on that key reserves and settles nothing on the balance.
+- `DEVELOPING.md`: the install line, how the package works, and how to build, test and release it.
+
 ## 0.1.12
 
 - The `rank-drop`, `top-ten` and `year-on-year` templates each send their Try it sentence, word for word, then the words you type after the template's name.
