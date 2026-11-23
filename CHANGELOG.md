@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.12
+
+- The `rank-drop`, `top-ten` and `year-on-year` templates each send their Try it sentence, word for word, then the words you type after the template's name.
+
 ## 0.1.11
 
 - The README's first paragraph, in Chinese, is the one signed on 2026-11-18 (「竞品和你的商品哪天调价、……cx 都能查到：Keepa 记着每个商品逐日的历史。……覆盖亚马逊 11 个站点。」), and in English the paragraph of the same meaning ("… from the day-by-day history Keepa keeps for each product. … It all comes from Keepa, on 11 Amazon marketplaces."). It no longer names Scheduled Tasks.
