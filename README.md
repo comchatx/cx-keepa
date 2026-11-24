@@ -14,4 +14,4 @@ Amazon US, UK, DE, FR, JP, CA, IT, ES, IN, MX and BR.
 
 ## What it costs
 
-Each product cx reads, and each lookup, is billed to your ComChatX balance. The plugin's page shows the price of one product, and Usage shows every purchase and its cost.
+Each product cx reads, and each lookup, is billed to your ComChatX balance; once you save your own Keepa API Key, Keepa bills you for them instead. The plugin's page shows the price of one product, and Usage shows every purchase and its cost.

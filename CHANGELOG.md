@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.15
+
+- Under "What it costs", the README says both cases: billed to your ComChatX balance, or, once you save your own Keepa API Key, by Keepa instead.
+- The MCP reference says `get_products` by `codes` is refused on the platform's key only.
+- The tarball test reads `npm pack --json` as an array or as an object keyed by the package's name.
+
 ## 0.1.14
 
 - The tile's mark on the Plugins page is the signed drawing.

@@ -12,7 +12,7 @@ On the platform's key, a call reserves the most its arguments can cost and settl
 
 A refusal starting `MCP HTTP request failed with status 402` is the wallet's floor, not Keepa's: the balance is under the call's reservation.
 
-Closed on the platform's key, and refused before any spend: `tracking_add`, `tracking_remove`, `tracking_list`, `tracking_get_notifications`, `tracking_set_webhook`. On a key the seller saved for Keepa they are open. `get_products` by `codes` is refused the same way; look a product up by ASIN.
+Closed on the platform's key, and refused before any spend: `tracking_add`, `tracking_remove`, `tracking_list`, `tracking_get_notifications`, `tracking_set_webhook`. On a key the seller saved for Keepa they are open. On the platform's key `get_products` by `codes` is refused the same way, so look a product up by ASIN; on a key the seller saved, the platform does not refuse it.
 
 ## The two ways to a product
 
