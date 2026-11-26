@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.16
+
+- The README no longer says that Usage lists every purchase.
+
 ## 0.1.15
 
 - Under "What it costs", the README says both cases: billed to your ComChatX balance, or, once you save your own Keepa API Key, by Keepa instead.
