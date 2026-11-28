@@ -42,3 +42,10 @@ it("ships its skills, its templates, its READMEs and its license, and nothing el
   expect(packed[0]!.files.map((file) => file.path).sort()).toEqual(["LICENSE", "README.md", "README.zh-CN.md", "package.json", ...shipped].sort());
   expect(manifest.files).toEqual(["skills", "prompts", "README.zh-CN.md"]);
 });
+
+it("teaches every Keepa call through the raw door: no shipped file names `cx get`, `cx estimate` or a typed product path, and the manifest names no typed aspects", () => {
+  const shipped = ["skills", "prompts"].flatMap((directory) => walk(join(ROOT, directory)));
+  for (const file of shipped) expect(readFileSync(file, "utf8"), relative(ROOT, file)).not.toMatch(/cx (get|estimate)\b|amazon\/(us|jp|<market>)\/(ASIN|<asin>)\/product/);
+  expect(readFileSync(join(ROOT, "skills/keepa/SKILL.md"), "utf8")).toContain("cx raw keepa --method GET --path /product --query domain=1 --query asin=ASIN");
+  expect((manifest.comchatx as { source?: Record<string, unknown> }).source).not.toHaveProperty("aspects");
+});

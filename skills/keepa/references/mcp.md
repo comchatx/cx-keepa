@@ -14,16 +14,6 @@ A refusal starting `MCP HTTP request failed with status 402` is the wallet's flo
 
 Closed on the platform's key, and refused before any spend: `tracking_add`, `tracking_remove`, `tracking_list`, `tracking_get_notifications`, `tracking_set_webhook`. On a key the seller saved for Keepa they are open. On the platform's key `get_products` by `codes` is refused the same way, so look a product up by ASIN; on a key the seller saved, the platform does not refuse it.
 
-## The two ways to a product
-
-| | `cx get amazon/<market>/<asin>/product` | `get_products` |
-|---|---|---|
-| Buys | history, statistics, offers, Buy Box and rating, always | the product; Buy Box and offers only when the arguments ask |
-| Settled in the trial | 6 tokens | 1 token |
-| Lands | an observation, cited by its path and reused while fresh | nothing; the reply is the script's result |
-
-In the trial the MCP way was faster and cheaper per read, and most of its prompt went to finding the tools.
-
 ## What the compact reply leaves out
 
 `get_products` replies in a compact form that carries `listedSince` and no release date. A release date comes only from `get_products` with `raw: true`, which returns Keepa's product object; read it by the conversions in [product-file.md](product-file.md). A seller is looked up by `get_seller` with its seller id.

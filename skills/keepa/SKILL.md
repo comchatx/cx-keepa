@@ -11,13 +11,13 @@ Use the marketplace the seller named: each marketplace is its own `domain` and i
 
 ```sh
 cx raw keepa --method GET --path /search --query domain=1 --query type=product --query 'term=PRODUCT NAME' --query asins-only=1
-cx get amazon/us/ASIN/product --source keepa
+cx raw keepa --method GET --path /product --query domain=1 --query asin=ASIN --query stats=90 --query history=1 --query offers=20 --query buybox=1 --query rating=1
 ```
 
-`domain` and the market segment follow the seller's marketplace: `1` us, `2` uk, `3` de, `4` fr, `5` jp, `6` ca, `8` it, `9` es, `10` in, `11` mx, `12` br. Typed paths exist for `amazon/us/<asin>/product` and `amazon/jp/<asin>/product`; other markets use raw `GET /product` with `domain` and one ASIN. Search returns ASINs only and is a separate paid call. A seller is looked up by its id on raw `GET /seller`.
+`domain` follows the seller's marketplace: `1` us, `2` uk, `3` de, `4` fr, `5` jp, `6` ca, `8` it, `9` es, `10` in, `11` mx, `12` br. `GET /product` takes one ASIN a call. Search returns ASINs only and is a separate paid call. A seller is looked up by its id on raw `GET /seller`.
 
-Typed requests include history, `stats=90`, `offers=20`, `buybox=1`, `rating=1`; each product path reserves 14 tokens, settling at stated consumption. `latest` accepts a copy up to 1h old. Every raw call reserves 50 tokens, settling likewise; reservations are not charges; tokens are Keepa's meter, not a price. `cx raw keepa --record <id> [--part <n>]` reads a kept reply without another purchase. Never name `key`; the gate attaches the credential.
+The product call above asks for history, 90 days of statistics, 20 offers, the Buy Box and the rating; leave out what the question does not need, since each part asked for can raise what Keepa states it consumed. A product fetched before is found as cx-sources says, by its ASIN in the `.ask.json` records, and one fetched by an earlier version is under `/tenant/amazon/<market>/<asin>/`, dated in its `meta.json`. Every call reserves 50 tokens and settles at the consumption Keepa states; reservations are not charges; tokens are Keepa's meter, not a price. `cx raw keepa --record <id> [--part <n>]` reads a kept reply without another purchase. Never name `key`; the gate attaches the credential.
 
 ## Read the file
 
-A product file is one product object from Keepa's `products` array, unchanged; a raw reply carries the whole array under `products`. A fetched product is answered with its facts: current price and coupon, rank in its named category, monthly sales, and listing and release timing. Each is computed by the conversions in [references/product-file.md](references/product-file.md), read before the first fact is stated — never `cat` the file whole; `listedSince` is the earliest listing, not a release date. Before a raw request other than the search above, read [references/raw-routes.md](references/raw-routes.md).
+A product reply carries Keepa's product objects, unchanged, as an array under `products`; a `product.json` an earlier version fetched is one such object. A fetched product is answered with its facts: current price and coupon, rank in its named category, monthly sales, and listing and release timing. Each is computed by the conversions in [references/product-file.md](references/product-file.md), read before the first fact is stated — never `cat` the file whole; `listedSince` is the earliest listing, not a release date. Before a raw request other than the two above, read [references/raw-routes.md](references/raw-routes.md).

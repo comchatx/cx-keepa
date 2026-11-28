@@ -1,6 +1,6 @@
 {
   "name": "cx-keepa",
-  "version": "0.1.16",
+  "version": "0.2.0",
   "description": "Tracks and reviews price, BSR and Buy Box, yours and rivals'.",
   "license": "MIT",
   "author": "ComChatX",
@@ -97,20 +97,6 @@
       "ownKey": {
         "en": "Usage is billed to your balance. You can also use your own Keepa API Key.",
         "zh": "按用量从余额扣费，也可以使用你自己的 Keepa API Key。"
-      },
-      "aspects": {
-        "amazon/us/<asin>/product": {
-          "en": "A product on Amazon US",
-          "zh": "亚马逊美国站的单个商品"
-        },
-        "amazon/jp/<asin>/product": {
-          "en": "A product on Amazon JP",
-          "zh": "亚马逊日本站的单个商品"
-        },
-        "raw": {
-          "en": "A product on any other marketplace, or any other lookup (a search, a seller, a best sellers list)",
-          "zh": "其他亚马逊站点的商品，或其他查询（搜索、卖家、畅销榜等）"
-        }
       }
     },
     "mcp": "keepa"
