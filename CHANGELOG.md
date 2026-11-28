@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+
+- The skill buys a product through the raw door, `cx raw keepa --path /product`, asking for history, statistics, offers, the Buy Box and the rating, and says to leave out what a question does not need. It no longer names `cx get` or the typed product paths, and says where a product fetched before is found.
+- The MCP reference no longer compares the typed path with `get_products`.
+- The package no longer names typed aspects for the Plugins page.
+
 ## 0.1.16
 
 - The README no longer says that Usage lists every purchase.

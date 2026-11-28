@@ -14,7 +14,7 @@
 | `GET /deal` | `selection` (deal JSON) |
 | `POST /deal` | deal selection in the `--body` file |
 
-Never name `key`; the gate attaches the credential. Admission refusals state the parameter rule before spending. A route outside this table is unavailable. Raw `/product` accepts one ASIN only; typed product asks handle lists. A failed typed request may still name kept replies; `cx raw keepa --record <id> [--part <n>]` reads one back, part 0 first.
+Never name `key`; the gate attaches the credential. Admission refusals state the parameter rule before spending. A route outside this table is unavailable. `/product` accepts one ASIN only, so several products are several calls. A failed call may still name its kept reply; `cx raw keepa --record <id> [--part <n>]` reads it back, part 0 first.
 
 ## Request units
 
